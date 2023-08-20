@@ -11,16 +11,21 @@
    <main>
         <header class="profile">
             <img src="estilos/images/img.jpg" alt="" style="width: 100px; height: auto;">
-            <h2 class="name">Daiana da Silva</h2>
+            <h1 class="name">Daiana da Silva</h1>
         </header>
         <article>
             <h1 class="section-title"> Histórico Educacional </h1>
-            <p><small>FACCAT - Faculdades Integradas de Taquara - Graduação: Tecnólogo em Sistemas para Internet, cursando</small></p>
-        
+
+            <ul>
+                <li>FACCAT - Faculdades Integradas de Taquara</li>
+                <li>Graduação: Tecnólogo em Sistemas para Internet, cursando</li>
+            </ul>
         </article>
         <article>
             <h1 class="section-title"> Histórico Profissional </h1>
-            <P> AQ - Infisc - Inteligência em Tecnologia Ltda </P>
+            <ul>
+                <li>AQ - Infisc - Inteligência em Tecnologia Ltda</li>
+            </ul>
         </article>
         <article>
             <h4 class="section-title"> Cursos complementares </h4>
@@ -33,6 +38,20 @@
                 <li>Introdução ao Sistema Linux</li>
                 <li>PostgreSQL</li>
             </ul>
+        </article>
+        <article>
+            <h1 class="section-title"> Histórico Educacional </h1>
+        
+            <ul id="educational-list" class="hidden">
+                <li>FACCAT - Faculdades Integradas de Taquara</li>
+                <li>Graduação: Tecnólogo em Sistemas para Internet, cursando</li>
+            </ul>
+            <button id="visualizar" onclick="redirectToInformacoesPessoais()">Visualizar Informações Pessoais</button>
+            <script>
+                function redirectToInformacoesPessoais() {
+                    window.location.href = "informacoespessoais.html";
+                }
+            </script>                      
         </article>
    </main>
 </body>

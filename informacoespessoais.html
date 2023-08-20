@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações Pessoais</title>
+    <link rel="stylesheet" href="estilos/style.css"> <!-- Link para a mesma folha de estilos -->
+</head>
+<body>
+    <main>
+        <header class="profile">
+            <img src="estilos/images/img.jpg" alt="" style="width: 100px; height: auto;">
+            <h2 class="name">Daiana da Silva</h2>
+        </header>
+        <article>
+            <h1 class="section-title"> Informações Pessoais </h1>
+            <ul>
+                <li>Nome: Daiana da Silva</li>
+                <li>Email: daianasilva@sou.faccat.br</li>
+                <li>Fone: (51)9 9625-7013</li>
+                <li>Cidade: Taquara/RS</li>
+                <li>GitGub: Faccatdaiana</li>
+                <!-- ... Mais informações ... -->
+            </ul>
+            <button id="voltar" onclick="redirectToIndex()">Voltar</button>
+            <script>
+                function redirectToIndex() {
+                    window.location.href = "index.html";
+                }
+            </script>
+        </article>
+    </main>
+</body>
+</html>
